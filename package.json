@@ -22,10 +22,7 @@
     "test-watch": "cross-env COVERAGE=true karma start"
   },
   "author": "Trevor Robinson <trevor@affinipay.com>",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/affinipay/react-bootstrap-autosuggest.git"
-  },
+  "repository": {},
   "keywords": [
     "react",
     "bootstrap",
