@@ -3,23 +3,11 @@
 import classNames from 'classnames'
 import shallowEqual from 'fbjs/lib/shallowEqual'
 import keycode from 'keycode'
-import PropTypes from 'prop-types'
 import React from 'react'
 import ReactDOM from 'react-dom'
 import type { Node } from './types'
 
 export default class Choices extends React.Component {
-  static propTypes = {
-    autoHeight: PropTypes.bool,
-    disabled: PropTypes.bool,
-    focused: PropTypes.bool,
-    inputValue: PropTypes.string,
-    items: PropTypes.arrayOf(PropTypes.any).isRequired,
-    onKeyPress: PropTypes.func,
-    onRemove: PropTypes.func,
-    renderItem: PropTypes.func.isRequired
-  };
-
   props: {
     autoHeight?: boolean;
     children?: Node | Node[];

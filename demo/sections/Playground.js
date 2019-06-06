@@ -2,7 +2,6 @@
 
 import { transform } from 'babel-standalone'
 import shallowEqual from 'fbjs/lib/shallowEqual'
-import PropTypes from 'prop-types'
 import React from 'react'
 import { Alert, SafeAnchor } from 'react-bootstrap'
 import ReactCodeMirror from 'react-codemirror'
@@ -37,15 +36,6 @@ type State = {
 type UserFn = (scope: Object) => ?React.Element<*>
 
 export default class Playground extends React.Component {
-  static propTypes = {
-    code: PropTypes.string.isRequired,
-    codeFolding: PropTypes.bool,
-    lineNumbers: PropTypes.bool,
-    ribbonText: PropTypes.node,
-    scope: PropTypes.object.isRequired,
-    showCode: PropTypes.bool
-  };
-
   state: State;
 
   _cachedUserFn: ?UserFn;

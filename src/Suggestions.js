@@ -1,7 +1,6 @@
 // @flow
 
 import shallowEqual from 'fbjs/lib/shallowEqual'
-import PropTypes from 'prop-types'
 import React from 'react'
 import { Dropdown, MenuItem } from 'react-bootstrap'
 import ReactDOM from 'react-dom'
@@ -26,25 +25,6 @@ type Props = {
 type State = {}
 
 export default class Suggestions extends React.Component {
-  static propTypes = {
-    datalistMessage: PropTypes.node,
-    filtered: PropTypes.bool,
-    focusedIndex: PropTypes.number,
-    getItemKey: PropTypes.func.isRequired,
-    isSelectedItem: PropTypes.func.isRequired,
-    items: PropTypes.arrayOf(PropTypes.any).isRequired,
-    labelledBy: PropTypes.oneOfType([
-      PropTypes.string,
-      PropTypes.number
-    ]),
-    onClose: PropTypes.func,
-    onDatalistMessageSelect: PropTypes.func,
-    onDisableFilter: PropTypes.func,
-    onSelect: PropTypes.func.isRequired,
-    open: PropTypes.bool,
-    renderItem: PropTypes.func.isRequired
-  };
-
   props: Props;
   state: State;
 
